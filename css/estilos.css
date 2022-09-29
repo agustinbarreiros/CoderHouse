@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500&display=swap');
+
+/* mobile-first 0-550px */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* grids */
+
+header {
+    grid-area: header;
+}
+
+.derecha {
+    grid-area: derecha;
+}
+
+.izquierda {
+    grid-area:izquierda;
+}
+
+.primero {
+    grid-area: primero;
+}
+
+.segundo {
+    grid-area: segundo;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.grilla {
+    height:100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "primero primero primero"
+        "segundo segundo segundo"
+        "footer footer footer";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 3fr 3fr 2fr;
+}
+
+.logo{
+    height: 130px;
+    width: 130px;
+}
+
+.violeta {
+    background-color: rgb(133, 58, 204) ;
+}
+
+/* index */
+
+.inicio{
+    margin-top: 145px;
+}
+
+.inicioFrase{
+    background-color: rgb(133, 58, 204);
+    text-align: center;
+    padding: 30px 0px;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.inicioTitulos {
+    padding: 30px;
+    text-align: center;
+}
+.inicioBienvenida{
+    font-size: 24px;
+}
+.inicioBienvenida2 {
+    font-size: 20px;
+}
+
+.pokemons{
+    background-color: rgb(133, 58, 204);
+    padding:30px;
+}
+.pokemonsFig{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+figcaption{
+    font-family: 'Roboto', sans-serif;
+}
+
+.pokemonsImg{
+    width: 200px;
+    height: 200px;
+}
+
+
+.titulop {
+    margin: 40px 70px 40px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.productosp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    grid-column-gap: 79px;
+    background-color: rgb(133, 58, 204);
+    padding:10px;
+}
+
+.productospImg{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+.productospFig{
+    background-color: white;
+    padding:20px;
+    font-size:small;
+    color: black;
+    border-radius: 30px;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: rgb(133, 58, 204);
+    font-family: 'Roboto', sans-serif;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.infoLogo {
+    height: 200px;
+    width: 200px;
+}
+
+.infoRedesImg{
+    margin:0px 20px;
+}
+
+.infoContacto{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.infoContactoBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    justify-items: center;
+    color:white
+}
+
+.copyright{
+    background-color: rgb(118, 34, 197);
+    text-align: center;
+    font-size: 13px;
+}
+
+/* nosotros */
+
+.tituloNos {
+    background-color: rgb(208, 177, 238);
+    text-align: center;
+    margin-top: 146px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif; ;
+}
+
+.preguntasNos {
+    margin-top: 10px;
+}
+
+.galeria{
+    padding: 10px 0px;
+    background-color:rgb(208, 177, 238);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items: center;
+}
+
+.titulos-clientes{
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    margin: 15px 0px;
+    border: 3px solid rgb(133, 58, 204);
+
+
+}
+.clientes{
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(133, 58, 204)
+}
+
+/* productos */
+
+.tituloProd{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: blueviolet;
+    margin-top: 200px;
+}
+
+.productoss{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.pociones, .combate, .bayas, .piedras{
+    border:6px solid rgb(118, 34, 197);
+    padding:50px 100px;
+    margin: 20px;
+}
+
+
+/* breakpoint */
+@media (min-width:550px){
+
+.izquierda, .derecha{
+    background-color: rgb(208, 177, 238);
+} 
+
+.grilla {
+    height:100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "izquierda primero derecha"
+        "izquierda segundo derecha"
+        "footer footer footer";
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 2fr;
+}
+
+/* index */
+
+.productosp {
+    display: flex;
+    
+    background-color: rgb(133, 58, 204);
+    padding:10px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+/* nosotros */
+
+.tituloNos {
+    background-color:white;
+    font-size: 30px ;
+}
+
+.galeria{
+    background-color:white;
+}
+
+.titulos-clientes{
+    background-color: rgb(133, 58, 204);
+    color: white;        
+}
+
+.clientes{
+    width: 400px;
+    height: 350px;
+    border: 3px solid rgb(133, 58, 204)
+}
+
+
+}
+
+/*breakpoint*/
+@media (min-width: 800px){
+.inicio{
+    margin-top: 85px;
+}
+
+/* index */
+
+.pokemons{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(133, 58, 204);
+    font-weight: bold;
+    
+    }
+    
+.pokemonsFig{
+    border-radius: 0px;
+    padding:3rem;
+    }
+
+.anim:hover{
+    transform: scale(1.5);
+}
+.anim{
+    transition: 2s;
+}
+.productosp{
+    display: flex;
+    justify-content:space-around;
+    padding: 40px 0px;
+    }
+
+.productospFig{
+    padding: 10px 50px 0px;
+}
+.productospImg{
+    height: 100px;
+    width: 100px;
+    }
+
+
+    
+figcaption{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    }
+
+/* nosotros */
+
+    .tituloNos {
+        background-color:white;
+        font-size: 40px ;
+    }
+    
+    .galeria{
+        padding: 10px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:15px;
+        justify-items: center;
+    }
+    
+    .titulos-clientes{
+    background-color: rgb(133, 58, 204);
+    color: white;        
+    }
+    
+    .clientes{
+        width: 400px;
+        height: 350px;
+        border: 3px solid rgb(133, 58, 204)
+    }
+
+}    
+
