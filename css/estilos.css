@@ -224,7 +224,7 @@ footer{
 
 /* productos */
 
-.tituloProd{
+.tituloProd, .tituloBlog{
     font-size: 30px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -233,18 +233,34 @@ footer{
 }
 
 .productoss{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.pociones, .combate, .bayas, .piedras{
-    border:6px solid rgb(118, 34, 197);
-    padding:50px 100px;
-    margin: 20px;
+/* blog */
+
+.tituloBlog{
+    margin-top: 150px;
 }
 
+.blogs p {
+    font-size:large;
+    font-style: bolder;
+    margin:5px;
+    text-align: center;
+}
+
+/* contacto */
+.contacto1{
+    margin-bottom: 20px;
+}
+
+.contacto2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
 
 /* breakpoint */
 @media (min-width:550px){
