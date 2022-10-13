@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* grids */
+
+header {
+    grid-area: header;
+}
+
+.derecha {
+    grid-area: derecha;
+}
+
+.izquierda {
+    grid-area:izquierda;
+}
+
+.primero {
+    grid-area: primero;
+}
+
+.segundo {
+    grid-area: segundo;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.logo{
+    height: 130px;
+    width: 130px;
+}
+
+.violeta {
+    background-color: rgb(133, 58, 204) ;
+}

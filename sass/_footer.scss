@@ -1,0 +1,51 @@
+@import "variablesGlobal";
+@mixin size($valorAlto, $valorAncho){
+        height:$valorAlto;
+        width: $valorAncho;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: $violetita;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .infoLogo {
+        @include size(200px,210px);
+        margin-right: 100px;
+    }
+    .inforRedes{
+        margin:5px;
+        .infoRedesImg{
+            margin:0px 20px;
+    } 
+    }
+}
+
+.info2{
+    .infoContacto{
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            margin: 20px 0px;
+    }
+    .infoContactoBox{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 0px;
+            justify-items: center;
+            color:white
+}
+}
+
+
+.copyright{
+    background-color: rgb(118, 34, 197);
+    text-align: center;
+    font-size: 13px;
+}
