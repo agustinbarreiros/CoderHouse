@@ -2,6 +2,7 @@
 @import "fuentes";
 @import "generales";
 @import "footer";
+@import "blog";
 
 @mixin size($valorAlto, $valorAncho) {
     height: $valorAlto;
@@ -93,9 +94,15 @@ figcaption {
     padding: 10px;
 }
 
+.productospFig:hover{
+    background-color:rgb(211, 71, 247);
+
+}
+
 .productospImg {
     @include size(50px, 50px)
 }
+
 
 a {
     text-decoration: none;
@@ -107,7 +114,9 @@ a {
     font-size: small;
     color: black;
     border-radius: 30px;
+
 }
+
 
 /* nosotros */
 
@@ -169,24 +178,12 @@ a {
     margin-top: 150px;
 }
 
-.blogs{
-    display: flex;
-    flex-direction: column;
-}
-
-.blogs p {
-    font-size: large;
-    font-style: bolder;
-    margin: 5px;
-    text-align: center;
-}
-
 /* contacto */
 .contacto1 {
     margin-bottom: 20px;
 }
 
-.contacto2 {
+.mapa {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
@@ -249,7 +246,6 @@ a {
         border: 3px solid $violetita
     }
 
-    /*blog*/
 
 
 }
@@ -293,9 +289,13 @@ a {
     .productospFig {
         padding: 10px 50px 0px;
     }
-
+    
     .productospImg {
         @include size(100px, 100px);
+    }
+
+    .productospImg:hover {
+        transform: scale(1.5);
     }
 
 
